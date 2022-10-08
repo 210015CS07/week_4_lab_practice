@@ -1,0 +1,121 @@
+#include <iostream>
+#include <cmath>
+#include <string>
+
+
+using namespace std;
+
+int main() {
+    
+    /*
+    //Problem 2.
+    int x;
+
+    cout << "Enter any number to check: ";
+    cin >> x;
+
+    if (x>=0 && x%2==0) {
+        cout << "The number is positive and even" << endl;
+    }
+    else if (x<0 && x%2==0){
+        cout << "The number is negative and even" << endl;
+    }
+    else if (x<0 && x%2!=0){
+        cout << "The number is negative and odd" << endl;
+    }
+    else{
+        cout << "The number is positve and odd" << endl;
+    }
+     
+    //Problem 3.
+    int n1, n2, n3;
+    
+    cout << "Enter numbers to check." << endl;
+    cout << "Num 1: ";
+    cin >> n1;
+    cout << "Num 2: ";
+    cin >> n2;
+    cout << "Num 3: ";
+    cin >> n3;
+    
+    
+    if (n1 > n2 && n1 > n3) {
+        cout << "The greatest number is " << n1 << endl;
+    }
+    else if (n2 > n1 && n2 > n3){
+        cout << "The greatest number is " << n2 << endl;
+    }
+    else {
+        cout << "The greatest number is " << n3 << endl;
+    }
+    
+    //Problem 4.
+    int year = 0;
+
+    cout << "Enter some year to check for leap or not \n" << "Year: ";
+    cin >> year;
+
+
+    if((year % 4==0 && year % 400==0) || year % 100!=0){
+        cout << "Entered year is a leap year!" << endl;
+    }
+    else {
+        cout << "Entered year is not a leap year!" << endl;
+    }
+    
+    
+    //Problem 5.
+    
+    float a, b, c = 0;
+    cout << "Enter three numbers: " << endl;
+    cin >> a >> b >> c;
+    
+    float x1, x2;
+    
+    float d = b * b - 4 * a * c;
+    
+    if(d > 0) {
+        cout << "x1 = " << (-b + sqrt(d)) / (2*a) << endl;
+        cout << "x2 = " << (-b - sqrt(d)) / (2*a) << endl;
+    }
+    else if (d == 0) {
+        cout << "x1 = x2 = " << -b / 2*a << endl;
+    }
+    else {
+        cout << "Roots are undefined" << endl;
+    }
+    
+    //Problem 6.
+    int a, b, c = 0;
+    
+    cout << "Enter value for angle of triangle: ";
+    cin >> a >> b >> c;
+    
+    if(b + c > a && a + c > b && a + b > c){
+        cout << "The triangle is valid" << endl;
+    }
+    else {
+        cout << "The triangle is not valid" << endl;
+    }
+    
+    //Problem 7.
+    char chtr = 0;
+    
+    cout << "Enter any character: ";
+    cin >> chtr;
+    
+    if (chtr >= 65 && chtr <= 90){
+        cout << "Entered character is Uppercase." << endl;
+    }
+    else if (chtr >= 97 && chtr <= 122) {
+        cout << "Entered character is Lowercase." << endl;
+    }
+    else if (chtr >= 48 && chtr <= 57) {
+        cout << "Entered character is a number." << endl;
+    }
+    else {
+        cout << "Entered character is a symbol." << endl;
+    }*/
+    
+    return 0;
+    }
