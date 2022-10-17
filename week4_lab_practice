@@ -7,7 +7,7 @@ using namespace std;
 
 int main() {
     
-    /*
+       /*
     //Problem 2.
     int x;
 
@@ -115,6 +115,249 @@ int main() {
     }
     else {
         cout << "Entered character is a symbol." << endl;
+    }
+    
+    //Problem 8.
+
+    string name = "some name";
+
+    cout << "Enter your name: ";
+    cin >> name;
+
+    if((name == "Johnson") || (name == "Smith") || (name == "Anderson") || (name == "Bennett") || (name == "Jackson")){
+        cout << "You have access" << endl;
+    }
+    else {
+        cout << "You do not have access!" << endl;
+    }
+    
+    //Problem 1.(Nested if problem)
+    
+    string c_hair = "a";
+    string c_eyes = "b";
+    string hand = "c";
+    
+    cout << "Please enter some info about user below. \n";
+    cout << "Colour of hair: ";
+    cin >> c_hair;
+    cout << "Colour of eyes: ";
+    cin >> c_eyes;
+    cout << "Which hand: ";
+    cin >> hand;
+    
+    if((c_hair == "dark") && (c_eyes == "blue") && (hand == "left")){
+        cout << "Jack" << endl;
+    }
+    else {
+        if ((c_hair == "dark") && (c_eyes == "blue") && (hand == "right")) {
+            cout << "Leonard" << endl;
+        }
+        else {
+            if((c_hair == "dark") && (c_eyes == "blue") && (hand == "left")){
+                cout << "Joanne" << endl;
+            }
+            else {
+                if((c_hair == "dark") && (c_eyes == "green") && (hand == "right")){
+                    cout << "Michael" << endl;
+                }
+                else {
+                    if ((c_hair == "dark") && (c_eyes == "green") && (hand == "left")) {
+                        cout << "Pamela" << endl;
+                    }
+                    else {
+                        if ((c_hair == "light") && (c_eyes == "blue") && (hand == "left")) {
+                            cout << "George" << endl;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    //Switch-case problems.
+    //Problem 1.
+    
+    int day = 0;
+    
+    cout << "Enter number of day: ";
+    cin >> day;
+    
+    switch (day) {
+        case 1:
+            cout << "Monday" << endl;
+            break;
+        case 2:
+            cout << "Tuesday" << endl;
+            break;
+        case 3:
+            cout << "Wednesday" << endl;
+            break;
+        case 4:
+            cout << "Thusday" << endl;
+            break;
+        case 5:
+            cout << "Friday" << endl;
+            break;
+        case 6:
+            cout << "Saturday" << endl;
+            break;
+        case 7:
+            cout << "Sunday" << endl;
+            break;
+            
+        default:
+            cout << "There is no such weekday" << endl;
+            break;
+    }
+    
+//    Problem 2.
+     
+    int grade = 0;
+    
+    cout << "Enter your grade: ";
+    cin >> grade;
+    
+    switch (grade/10) {
+        case 10:
+        case 9:
+            cout << "A" << endl;
+            break;
+        case 8:
+            cout << "B" << endl;
+            break;
+        case 7:
+            cout << "C" << endl;
+            break;
+        case 6:
+            cout << "D" << endl;
+            break;
+        case 5:
+        case 4:
+        case 3:
+        case 2:
+        case 1:
+        case 0:
+            cout << "F" << endl;
+            break;
+            
+        default:
+            cout << "Enter only form 0 to 100!" << endl;
+            break;
+    }
+     
+    
+//    Problem 3.
+    int num;
+    cout << "number: ";
+    cin >> num;
+    
+    switch (num > 0) {
+        case 1:
+            cout << "Number is positive."<< endl;
+            break;
+            
+        case 0:
+            
+            switch (num < 0) {
+                case 1:
+                    cout << "Number is negative." << endl;
+                    break;
+                    
+                case 0:
+                    
+                default:
+                    cout << "Number is zero." << endl;
+                    break;
+            }
+    }
+    
+//    Problem 4.
+    
+    int language = 0;
+    
+    cout << "Choose language to translate ""Hello"": \n 1.German \n 2.Spanish \n 3.Arabic \n 4.Turkish \n" << endl;
+    cin >> language;
+    
+    switch (language) {
+        case 1:
+            cout << "Hallo" << endl;
+            break;
+        case 2:
+            cout << "Hola" << endl;
+            break;
+        case 3:
+            cout << "Ahlan" << endl;
+            break;
+        case 4:
+            cout << "Merhaba" << endl;
+            break;
+            
+        default:
+            cout << "There is no such option" << endl;
+            break;
+    }
+    
+    int id;
+    
+    cout << "Enter some ID: ";
+    cin >> id;
+    
+    switch (id) {
+        case 1:
+            cout << " Name: Mahmudjon \n Lastname: Rahmonberdiyev \n Age: 20 \n Good boy 👍😁" << endl;
+            break;
+        case 2:
+            cout << " Name: Akbar \n Lastname: Juramirzaev \n Age: 20 \n So so boy 🤓🤙" << endl;
+            break;
+        case 3:
+            cout << " Name: Humoyun \n Lastname: Tursunpulat \n Age: 20 \n 💪😎" << endl;
+            break;
+            
+        default:
+            cout << "No one found with this ID." << endl;
+            break;
+    }
+    
+    int digit;
+    
+    cout << "Enter some digit: ";
+    cin >> digit;
+    
+    switch (digit) {
+        case 0:
+            cout << "Zero" << endl;
+        case 1:
+            cout << "One" << endl;
+            break;
+        case 2:
+            cout << "Two" << endl;
+            break;
+        case 3:
+            cout << "Three" << endl;
+            break;
+        case 4:
+            cout << "Four" << endl;
+            break;
+        case 5:
+            cout << "Five" << endl;
+            break;
+        case 6:
+            cout << "Six" << endl;
+            break;
+        case 7:
+            cout << "Seven" << endl;
+            break;
+        case 8:
+            cout << "Eight" << endl;
+            break;
+        case 9:
+            cout << "Nine" << endl;
+            break;
+            
+        default:
+            cout << "It is not a digit" << endl;
+            break;
     }*/
     
     return 0;
